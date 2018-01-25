@@ -230,6 +230,8 @@ WARNING_AREA_TILE_DIST = CHUNK_SIZE*20
 WARN_AREA_REDUCTION_RATIO = 15
 
 
+SEPARATE_DIST = 200
+
 ---------------------------------------
 -- Other Forces/Teams Options
 ---------------------------------------
