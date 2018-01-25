@@ -56,7 +56,7 @@ ENABLE_SEPARATE_SPAWNS = true
 
 -- Enable Scenario version of RSO
 -- You can reconfigure the RSO resource settings in the RSO files if you want to
-ENABLE_RSO = true
+ENABLE_RSO = false
 
 -- Enable Undecorator
 -- Removes decorative items to reduce save file size.
