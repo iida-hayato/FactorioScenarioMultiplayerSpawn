@@ -1287,14 +1287,14 @@ local function roll_chunk(surface, c_x, c_y)
 
 					-- OARC EDIT -- Remove spawns in any safe area!
 					local isNearSpawn = false
-					if (global.uniqueSpawns) and (SEPARATE_DIST) then
+					if (global.uniqueSpawns) and (SAFE_AREA_TILE_DIST) then
 						for name,spawn in pairs(global.uniqueSpawns) do
 							local safeArea = {left_top=
-												{x=spawn.pos.x-SEPARATE_DIST,
-												 y=spawn.pos.y-SEPARATE_DIST},
+												{x=spawn.pos.x-SAFE_AREA_TILE_DIST,
+												 y=spawn.pos.y-SAFE_AREA_TILE_DIST},
 											  right_bottom=
-												{x=spawn.pos.x+SEPARATE_DIST,
-												 y=spawn.pos.y+SEPARATE_DIST}}
+												{x=spawn.pos.x+SAFE_AREA_TILE_DIST,
+												 y=spawn.pos.y+SAFE_AREA_TILE_DIST}}
 
 							if (CheckIfInArea({x=c_center_x, y=c_center_y},safeArea)) then
 								isNearSpawn = true
