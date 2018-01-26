@@ -271,11 +271,11 @@ MIN_ONLINE_TIME = TICKS_PER_MINUTE * MIN_ONLINE_TIME_IN_MINUTES
 --------------------------------------------------------------------------------
 
 -- Enable/Disable enemy expansion (Applies to RSO as well!)
-ENEMY_EXPANSION = false
+ENEMY_EXPANSION = true
 
 -- Divide the alien factors by this number to reduce it (or multiply if < 1)
-ENEMY_POLLUTION_FACTOR_DIVISOR = 10
-ENEMY_DESTROY_FACTOR_DIVISOR = 10
+ENEMY_POLLUTION_FACTOR_DIVISOR = 1
+ENEMY_DESTROY_FACTOR_DIVISOR = 1
 
 
 --------------------------------------------------------------------------------
