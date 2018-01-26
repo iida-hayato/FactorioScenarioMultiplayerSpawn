@@ -220,11 +220,11 @@ SPAWN_TREE_OCTAGON_ENABLED = true
 
 -- Safe area has no aliens
 -- +/- this in x and y direction
-SAFE_AREA_TILE_DIST = CHUNK_SIZE*12
+SAFE_AREA_TILE_DIST = CHUNK_SIZE*6
 
 -- Warning area has reduced aliens
 -- +/- this in x and y direction
-WARNING_AREA_TILE_DIST = CHUNK_SIZE*20
+WARNING_AREA_TILE_DIST = CHUNK_SIZE*10
 
 -- 1 : X (spawners alive : spawners destroyed) in this area
 WARN_AREA_REDUCTION_RATIO = 15
