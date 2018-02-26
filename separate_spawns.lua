@@ -293,7 +293,7 @@ end
 -- we'll have to figure out how to change it.
 function ShareVisionBetweenPlayers()
 
-    if ((game.tick % (TICKS_PER_SECOND*5)) == 0) then
+    if ((game.tick % (TICKS_PER_SECOND/5)) == 0) then
         
         for _,force in pairs(game.forces) do
             if (force ~= nil) then
@@ -311,9 +311,5 @@ function ShareVisionBetweenPlayers()
                 end
             end
         end
-
-        global.tick_counter = 0
-    else
-        global.tick_counter = global.tick_counter + 1
     end
 end
