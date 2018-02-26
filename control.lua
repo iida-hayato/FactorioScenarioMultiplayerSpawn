@@ -280,7 +280,7 @@ end)
 ----------------------------------------
 script.on_event(defines.events.on_tick, function(event)
     -- Every few seconds, chart all players to "share vision"
-    if ENABLE_SHARED_TEAM_VISION then
+    if ENABLE_SHARED_TEAM_PLAYER_VISION then
         ShareVisionBetweenPlayers()
     end
 
