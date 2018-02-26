@@ -291,7 +291,7 @@ end
 -- are in.
 -- I have no idea how compute intensive this function is. If it starts to lag the game
 -- we'll have to figure out how to change it.
-function ShareVisionBetweenPlayers()
+function SharePlayerVisionBetweenPlayers()
 
     if ((game.tick % (TICKS_PER_SECOND*5)) == 0) then
         
@@ -307,6 +307,33 @@ function ShareVisionBetweenPlayers()
                                      player.position.y-CHUNK_SIZE},
                                      {player.position.x+CHUNK_SIZE,
                                      player.position.y+CHUNK_SIZE}})
+                    end
+                end
+            end
+        end
+
+        global.tick_counter = 0
+    else
+        global.tick_counter = global.tick_counter + 1
+    end
+end
+
+function ShareSpawnPositionVisionBetweenPlayers()
+
+    if ((game.tick % (TICKS_PER_SECOND*5)) == 0) then
+        
+        for _,force in pairs(game.forces) do
+            if (force ~= nil) then
+                if ((force.name ~= enemy) and
+                    (force.name ~= neutral) and
+                    (force.name ~= player)) then
+
+                    for _,spawns in pairs(global.sharedSpawns) do
+                        force.chart(GAME_SURFACE_NAME,
+                                    {{spawns.position.x-CHUNK_SIZE,
+                                     spawns.position.y-CHUNK_SIZE},
+                                     {spawns.position.x+CHUNK_SIZE,
+                                     spawns.position.y+CHUNK_SIZE}})
                     end
                 end
             end
