@@ -85,8 +85,11 @@ ENABLE_GRAVESTONE_ON_LEAVING_TIME_MINS = 15
 -- Enable quick start items
 ENABLE_POWER_ARMOR_QUICK_START = false
 
--- Enable shared vision between teams (all teams are still COOP)
-ENABLE_SHARED_TEAM_VISION = true
+-- Enable shared player vision between teams (all teams are still COOP)
+ENABLE_SHARED_TEAM_PLAYER_VISION = true
+
+-- Enable shared spawn position vision between teams
+ENABLE_SHARED_TEAM_SPAWN_POSITION_VISION = ENABLE_SHARED_TEAM_PLAYER_VISION and true
 
 -- Enable map regrowth, see regrowth_map.lua for more info.
 ENABLE_REGROWTH = false
