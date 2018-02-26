@@ -311,9 +311,5 @@ function ShareVisionBetweenPlayers()
                 end
             end
         end
-
-        global.tick_counter = 0
-    else
-        global.tick_counter = global.tick_counter + 1
     end
 end
